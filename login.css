@@ -1,0 +1,133 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a, #222222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  width: 100%;
+}
+
+.wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(9px);
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 0 12px #95c11eaa, 0 0 18px inset #333;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 350px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #95c11e;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  height: 3px;
+  background-color: #95c11e;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #eee;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #bbb;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  border-color: #95c11e;
+}
+
+.error {
+  color: #0077ff;
+  font-size: 13px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  height: 36px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+#submit_btn {
+  background-color: #95c11e;
+  color: #000;
+}
+
+#submit_btn:hover {
+  background-color: #7fa917;
+  transform: scale(1.05);
+}
+
+#reset_btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#reset_btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}

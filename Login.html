@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="wrapper" action="">
+      <form id="form" autocomplete="off">
+        <h1>Login Form</h1>
+        <br />
+        <hr />
+        <br /><br />
+
+        <input
+          type="email"
+          placeholder="enter your email"
+          id="email"
+          required
+        />
+        <input
+          type="password"
+          placeholder="enter your password"
+          id="pwd"
+          required
+        /><br />
+
+        <div class="buttons">
+          <button type="submit" id="submit_btn">submit</button>
+          <br />
+          <button type="reset" id="reset_btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>
